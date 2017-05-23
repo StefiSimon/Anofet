@@ -1,0 +1,18 @@
+
+    .about-container-content {
+      padding: 0px 100px 50px 100px;
+      font-weight: 100;
+      letter-spacing: 1px;
+      line-height: 25px;
+    }
+
+    .about-container-info {
+      font-size: $font-size-m;
+      font-weight: 300;
+      margin-bottom: 50px;
+
+      .info-text {
+        padding: 20px;
+      }
+    }
+

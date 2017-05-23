@@ -1,0 +1,26 @@
+.home-container {
+  background: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+
+  .home-container-title {
+    padding-top: 150px;
+    font-size: $font-size-xl;
+  }
+
+  .home-container-subtitle {
+    padding-top: 50px;
+    font-size: $font-size-l;
+    font-weight: 100;
+  }
+
+  .home-container-icons {
+    font-size: $font-size-l;
+    padding-bottom: 100px;
+
+    i {
+      padding: 20px;
+    }
+  }
+}

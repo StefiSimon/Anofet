@@ -1,0 +1,50 @@
+
+<div class="section-container">
+        <div class="section-container-inner">
+            <div class="section-title">Create your own form</div>
+            <div class="create-container-content">
+                <div class="create-container-info">
+                    <div class="help-text">
+                        <i class="fa fa-dot-circle-o"></i>
+                        Please choose your subject:
+                    </div>
+                    <select class="default-input" name="category">
+                        <option value="albums" selected>Albums</option>
+                        <option value="films">Films</option>
+                        <option value="restaurants">Restaurants</option>
+                    </select>
+                </div>
+                <div class="create-container-info">
+                    <div class="help-text">
+                        <i class="fa fa-dot-circle-o"></i>
+                        Now pick a name:
+                    </div>
+                    <input class="default-input" placeholder="Name..." />
+                </div>
+                <div class="create-container-info">
+                    <div class="help-text">
+                        <i class="fa fa-dot-circle-o"></i>
+                        How many months do you want us to share your form?
+                    </div>
+                    <input class="default-input" type="number" min="1" max="12" placeholder="Number of months..." />
+                </div>
+                <div class="create-container-info">
+                    <div class="help-text">
+                        <i class="fa fa-dot-circle-o"></i>
+                        Your form's fields
+                    </div>
+                    <button class="default-button" id="create-field-button">Add field</button>
+                    <button class="default-button" id="remove-field-button">Delete fields</button>
+                </div>
+                <div id="add-field"></div>
+                <div class="create-container-info">
+                    <div class="help-text">
+                        <i class="fa fa-dot-circle-o"></i>
+                        Would you like to share your form?
+                    </div>
+                    <button class="default-button">Yes</button>
+                    <button class="default-button">No</button>
+                </div>
+            </div>
+        </div>
+</div>

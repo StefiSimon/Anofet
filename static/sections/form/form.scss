@@ -1,0 +1,202 @@
+
+.form-container-search {
+  padding-bottom: 50px;
+}
+.form-step-indicator {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  background-color: red;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  .form-step {
+    color: white;
+    width: 33.3%;
+    font-weight: 300;
+    font-size: $font-size-m;
+    letter-spacing: 1px;
+    border-right: 1px solid white;
+    padding: 20px;
+    opacity: 0.8;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+}
+
+.form-list {
+  display: flex;
+  margin-bottom: 50px;
+
+  .form-list-column {
+    text-align: center;
+    position: relative;
+    width: 50%;
+  }
+
+  .form-list-link {
+    padding: 20px 0;
+    font-weight: 200;
+    cursor: pointer;
+    letter-spacing: 1px;
+
+    &:hover {
+      background-color: #E9EBEE;
+      transition: all 0.25s linear;
+      -webkit-transition: all 0.25s linear;
+    }
+  }
+}
+
+.form-personal-info {
+  padding: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: $font-size-l;
+  font-weight: 100;
+  letter-spacing: 1px;
+
+  .personal-info-desc {
+    margin-bottom: 50px;
+  }
+
+  .field {
+    margin-left: 25%;
+    display: flex;
+    padding: 20px;
+  }
+
+  .field-name {
+    width: 200px;
+    font-size: $font-size-m;
+  }
+}
+
+.form-content {
+
+  .form-title {
+    padding: 50px;
+    font-size: $font-size-l;
+    font-weight: 300;
+  }
+
+  .form-fields {
+    display: flex;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 25px;
+    width: 100%;
+
+    .form-column {
+      position: relative;
+      width: 50%;
+      border-right: 1px solid darkgray;
+
+      &:last-of-type {
+        border-right: none;
+      }
+
+    }
+    .field {
+      display: flex;
+      padding: 20px;
+    }
+
+    .field-name {
+      color: dimgrey;
+      width: 200px;
+    }
+
+  }
+}
+.form-submit-button {
+  padding: 50px;
+  margin-bottom: 50px;
+
+  &.personal-info-button {
+    background-color: black;
+  }
+}
+
+
+.form-personal-info {
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .form-container-search {
+    .search-box {
+      width: 250px;
+      height: 25px;
+    }
+  }
+
+  .form-content {
+    .form-fields {
+      .field {
+        padding: 20px 10px;
+      }
+      .field-name {
+        width: 100px;
+      }
+      .default-input {
+        width: 300px;
+      }
+    }
+  }
+
+  .form-personal-info {
+    .field {
+      margin-left: 10%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .form-content {
+    .form-fields {
+      .field {
+        padding: 20px 0px;
+      }
+      .field-name {
+        width: 100px;
+      }
+      .default-input {
+        width: 250px;
+      }
+    }
+  }
+  .form-personal-info {
+    .field {
+      margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+
+  .form-content {
+    .form-fields {
+      display: block;
+      .form-column {
+        width: 100%;
+      }
+      .field {
+        padding: 20px 10px;
+      }
+    }
+  }
+
+  .form-list {
+    display: block;
+  }
+}

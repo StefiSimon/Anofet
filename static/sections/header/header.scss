@@ -1,0 +1,45 @@
+.header-container {
+  background-color: black;
+  width: 100%;
+  border-bottom: 1px solid red;
+  height: 80px;
+  position: fixed;
+  z-index: 100;
+
+  .header-container-content {
+
+    .header-link {
+      padding: 20px;
+      color: white;
+      font-weight:100;
+      letter-spacing: 1px;
+      
+      div {
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+          color: red;
+          font-size: $font-size-m;
+          transition: all 0.25s linear;
+          -webkit-transition: all 0.25s linear;
+        }
+
+        &:focus {
+          color: red;
+          font-size: $font-size-m;
+          transition: all 0.25s linear;
+          -webkit-transition: all 0.25s linear;
+        }
+
+
+        &:active {
+          color: red;
+          font-size: $font-size-m;
+          transition: all 0.25s linear;
+          -webkit-transition: all 0.25s linear;
+        }
+      }
+    }
+  }
+}

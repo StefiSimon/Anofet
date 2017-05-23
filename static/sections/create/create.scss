@@ -1,0 +1,43 @@
+
+
+.create-container-content {
+  width: 60%;
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: relative;
+
+  .create-container-info {
+
+    display: flex;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding: 50px;
+
+    .fa.fa-dot-circle-o {
+      color: red;
+    }
+
+    .help-text {
+      position: relative;
+      width: 50%;
+    }
+  }
+
+  #add-field {
+    text-align: center;
+    font-weight:100;
+    letter-spacing: 1px;
+    font-size: $font-size-m;
+    padding-bottom: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .create-container-content {
+    width: 100%;
+  }
+}
+

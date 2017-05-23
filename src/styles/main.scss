@@ -1,0 +1,99 @@
+@import 'variables.scss';
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.fa {
+  color: red;
+}
+
+.section-container {
+  margin-top: -20px;
+  width: 100%;
+
+  .section-container-inner {
+    background-color: white;
+    margin: 0px 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.default-input {
+  width: 350px;
+  height: 30px;
+  border-radius: 8px;
+  font-weight: 100;
+  font-size: $font-size-s;
+  border-bottom: 1px solid red;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+
+  &::placeholder {
+    color: dimgrey;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.default-button {
+  background-color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: $font-size-s;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: white;
+
+  &:hover {
+    color: red;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+  }
+
+  &:focus {
+    color: red;
+    transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+  }
+
+}
+
+.section-title {
+  font-size: $font-size-l;
+  padding: 50px;
+  font-weight: 300;
+}
+
+body {
+  background-color: #E9EBEE;
+  margin:0;
+}
+
+.title {
+  font-size: $font-size-xl;
+}
+
+.subtitle {
+  font-size: $font-size-l;
+}
+
+.text-content {
+  font-size: $font-size-s;
+}
+
+@media only screen and (max-width: 800px) {
+  .section-container {
+
+    .section-container-inner {
+      margin: 0px 20px;
+    }
+  }
+}
